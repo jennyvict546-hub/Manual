@@ -1,0 +1,104 @@
+      /*Selector universal*/
+        *{
+            margin: 0;
+            padding: 5px;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+        /*Selector de etiqueta*/
+        body{
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "nav nav nav"
+            "body body body"
+            "main main main"
+            "section section section"
+            "footer footer footer";
+            grid-template-columns: 20% afr 20%;
+            grid-template-rows: 80px 1fr auto auto;
+            height: 100vh;
+            gap: 10px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+
+        h1{
+          font-weight: bold;
+        }
+        /*Seletor de ID*/
+        #Titulo{
+          text-align: center;
+          color: red;
+          font-size: 2.5rem;
+        }
+
+      #paleta{
+          text-align: center;
+          color: green;
+          background-color: lemonchiffon;
+        }
+
+        /*Selector de clase*/
+        .Titulo{
+          font-style: italic;
+          background-color: lightgrey;
+        }
+
+        .paleta{
+          font-style: italic;
+        }
+
+        .Titulo, .paleta{
+          border: 2px ;
+          border-radius: 10px;
+        }
+
+        /*Selector de atributo*/
+        #Contacto h3{
+          text-align: center;
+          font-style: italic;
+        }
+        #Contacto h2{
+          text-align: center;
+          font-style: bold;
+        }
+        .Contacto{
+          background-color: lightblue;
+          border: 2px ;
+          border-radius: 10px;
+        }
+
+        /*Aplicando fuentes de Google*/
+        .fuentes h1{
+          text-align: center;
+          color: rgb(184, 95, 95);
+          font-family: pacifico, cursive;
+          font-weight: 400;
+          font-style: normal;
+        }
+        .fuentes{
+          background-color: #40c9e3;
+          background-image: url(seamless-pattern-ice-cream-cones-600nw-2476000683.webp);
+          height: 500px;
+        }
+        header{
+            grid-area: header;
+        }
+
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: main;
+        }
+        aside{
+            grid-area: aside;
+        }
+        section{
+            grid-area: section;
+        }
+        footer{
+            grid-area: footer;
+
+        }

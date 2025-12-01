@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion</title>
+</head>
+<body>
+    <form action="">
+        <!--Validaciones-->
+        <input type="text" required>
+        <br>
+        <br>
+        <input type="text" disabled>
+        <br>
+        <br>
+        <input type="password" minlength="5" maxlength="10" required>
+        <br>
+        <br>
+        <input type="text" readonly value="Texto permanente">
+        <br>
+        <br>
+        <input type="text" pattern="[A-Z]{1}[a-z]{5}[0-9]{2}" placeholder="Ingresa una mayuscula 5 minucula y 2 numeros">
+        <br>
+        <br>
+        <input type="number" min="5" max="10" placeholder="Escribir entre 5 y 10 numeros">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
